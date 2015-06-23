@@ -1,3 +1,3 @@
 <?php
-$line       = $_REQUEST["QuestionSet"];
+$line = $_REQUEST["QuestionSet"];
 ?>
