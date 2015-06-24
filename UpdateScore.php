@@ -11,9 +11,9 @@ for($i=0; $i<count($separatedByLines); $i++) {
   if($user == explode(",", $separatedByLines[$i])[0]) {
     $newLine = explode(",", $separatedByLines[$i])[0].",".explode(",", $separatedByLines[$i])[1].",".((string)$newScore);
     $separatedByLines[$i] = $newLine;
-    fwrite($scoreFile, $separatedByLines[$i]);
-    fwrite($scoreFile, PHP_EOL);
-    break;
   }
+  echo($separatedByLines[$i]);
+  fwrite($scoreFile, $separatedByLines[$i]);
+  fwrite($scoreFile, PHP_EOL);
 }
 ?>
