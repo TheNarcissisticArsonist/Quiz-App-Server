@@ -20,4 +20,5 @@ if($userExists) {
 else {
   echo("WRONG PASSWORD");
 }
+fclose($file);
 ?>
