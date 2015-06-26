@@ -16,4 +16,5 @@ for($i=0; $i<count($separatedByLines); $i++) {
   fwrite($scoreFile, $separatedByLines[$i]);
   fwrite($scoreFile, PHP_EOL);
 }
+fclose($scoreFile);
 ?>
