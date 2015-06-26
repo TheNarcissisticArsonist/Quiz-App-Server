@@ -1,5 +1,5 @@
 <?php
-$user     = $_REQUEST["user"];
+$user = $_REQUEST["user"];
 $newScore = $_REQUEST["score"];
 $scoreFile = fopen("UserList.csv", "r");
 $wholeFile = fread($scoreFile, filesize("UserList.csv"));
